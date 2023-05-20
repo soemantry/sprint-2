@@ -6,6 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#d3e5fb"
     tools:context=".MainActivity">
 
     <FrameLayout
@@ -17,16 +18,19 @@
         <View
             android:id="@+id/header"
             android:layout_width="wrap_content"
-            android:layout_height="200dp"
+            android:layout_height="110dp"
             android:background="@drawable/rounded"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints">
+
+
+        </View>
 
         <LinearLayout
             android:id="@+id/linearLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="70dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"
             android:orientation="horizontal">
 
             <TextView
@@ -52,8 +56,8 @@
             android:id="@+id/txtDaerah"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="95dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="55dp"
             android:text="Banyumas"
             android:textColor="@color/black"
             android:textSize="18sp"
@@ -64,17 +68,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
-            android:layout_marginTop="220dp"
+            android:layout_marginTop="120dp"
             android:text="Wisata Kabupaten Banyumas"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="normal" />
 
+        <ImageView
+            android:id="@+id/imageProfile"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="270dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/profil" />
+
     </FrameLayout>
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_marginTop="245dp"
+        android:layout_marginTop="145dp"
         android:id="@+id/rvUser"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

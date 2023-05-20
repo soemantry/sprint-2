@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
                 val user = dbHelper.getUser(email, password)
 
                 if (user != null) {
-                    val intent = Intent(this, DetailActivity::class.java)
+                    val intent = Intent(this, Home::class.java)
 
                     with(sharedPrefs.edit()) {
                         putInt("user_id", user.id)
